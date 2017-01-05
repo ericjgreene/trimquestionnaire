@@ -6,7 +6,7 @@ class CreateQuestionnaires < ActiveRecord::Migration[5.0]
       t.string :projectrepo
       t.string :projecturl
       t.integer :usingbestpracticesforopp
-      t.integar :modulardevelopment
+      t.integer :modulardevelopment
 
       t.timestamps
     end
