@@ -1,0 +1,2 @@
+json.extract! questionnaire, :id, :name, :email, :projectrepo, :projecturl, :usingbestpracticesforopp, :modulardevelopment, :created_at, :updated_at
+json.url questionnaire_url(questionnaire, format: :json)
