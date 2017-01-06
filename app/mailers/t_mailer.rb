@@ -1,0 +1,2 @@
+class TMailer < ApplicationMailer
+end
