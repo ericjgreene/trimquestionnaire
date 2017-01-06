@@ -1,9 +1,10 @@
 class TMailer < ApplicationMailer
-  default from: ‘notifications@example.com’
+  default from: ‘ericjgreene@gmail.com’
+    bcc:['eric@ericjgreene.com']
 
-  def welcome_email(user)
-    @user = user
+  def welcome_email(questionnaire)
+    @questionnaire = questionnaire
     @url = ‘http://example.com/login’
-    mail(to: @user.email, subject: ‘Welcome!’)
+    mail(to: @questionnaire.email, subject: ‘Welcome!’)
   end
 end
