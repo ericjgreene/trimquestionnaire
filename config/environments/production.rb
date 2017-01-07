@@ -61,7 +61,7 @@ Rails.application.configure do
     domain: "gmail.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV['GMAIL_PASSWORD_DEV'],
+    user_name: ENV['GMAIL_USERNAME_DEV'],
     password: ENV['GMAIL_PASSWORD_DEV']
   }
   # Use a real queuing backend for Active Job (and separate queues per environment)
