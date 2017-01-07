@@ -4,6 +4,6 @@ class TMailer < ApplicationMailer
   def welcome_email(questionnaire)
     @questionnaire = questionnaire
     # @url = ‘http://google.com’
-    mail :to => "@questionnaire.email", :subject => "Welcome!"
+    mail :to => "ericjgreene@gmail.com", :subject => "Welcome!"
   end
 end
