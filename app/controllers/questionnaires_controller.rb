@@ -28,9 +28,9 @@ class QuestionnairesController < ApplicationController
 
     respond_to do |format|
       if @questionnaire.save
+        TMmailer.welcome_email(@questionnaire).deliver_later
         format.html { redirect_to @questionnaire, notice: 'Questionnaire was successfully created.' }
         format.json { render :show, status: :created, location: @questionnaire }
-        TMmailer.welcome_email(@questionnaire).deliver_later
       else
         format.html { render :new }
         format.json { render json: @questionnaire.errors, status: :unprocessable_entity }
