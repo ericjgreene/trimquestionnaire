@@ -1,4 +1,4 @@
-class TMailer < ApplicationMailer
+class TMailer < ApplicationMailer::Base
   default :from => "machinegreene@gmail.com"
 
   def welcome_email(questionnaire)
