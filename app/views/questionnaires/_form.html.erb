@@ -1,3 +1,10 @@
+<div class="outerbackground">
+
+
+
+<form class="">
+
+
 <%= form_for(questionnaire) do |f| %>
   <% if questionnaire.errors.any? %>
     <div id="error_explanation">
@@ -11,37 +18,42 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  <div class="field form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NAME">
+    <%= f.label :name, :class => 'form-control' %>
+    <%= f.text_field :name, :class => 'form-control', :placeholder => 'NAME' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
     <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :projectrepo %>
     <%= f.text_field :projectrepo %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :projecturl %>
     <%= f.text_field :projecturl %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :usingbestpracticesforopp %>
     <%= f.number_field :usingbestpracticesforopp %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :modulardevelopment %>
     <%= f.text_field :modulardevelopment %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <button type="submit" class="btn btn-primary"> <%= f.submit %> </button>
   </div>
 <% end %>
+
+</form>
+</div>
