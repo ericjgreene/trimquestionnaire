@@ -28,7 +28,11 @@
 .trimform {
   background-color: #456990;
   padding: 2em;
-  margin: 3em;
+  margin-top: 3em;
+  margin-right: 45em;
+  margin-left: 3em;
+
+
   font-family: "MuseoSans-500";
 }
 @font-face {
@@ -36,6 +40,8 @@
 }
 .form-control {
   font-family: "MuseoSans-500";
+  background-color: #F45B69;
+  color: white;
 }
 
 .btn-primary {
@@ -50,8 +56,15 @@
 .trimsubmit {
   background-color: #F45B69;
   color: white;
+  border-color: #F45B69;
 }
 
 .row {
   display: flex;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+.col-form-label {
+  color: white;
 }

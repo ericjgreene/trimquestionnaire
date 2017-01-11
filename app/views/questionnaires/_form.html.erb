@@ -15,38 +15,38 @@
     </div>
   <% end %>
 
-  <div class="field form-group col-5">
+  <div class="field form-group col-12">
     <%= f.text_field :name, :class => 'form-control trimfield', :placeholder => 'FULL NAME' %>
   </div>
 
-  <div class="field form-group col-5">
+  <div class="field form-group col-12">
     <%= f.text_field :email, :class => 'form-control trimfield', :placeholder => 'EMAIL' %>
   </div>
 
-  <div class="field form-group col-5">
+  <div class="field form-group col-12">
     <%= f.text_field :projectrepo, :class => 'form-control trimfield', :placeholder => 'PROJECT REPO' %>
   </div>
 
-  <div class="field form-group col-5">
+  <div class="field form-group col-12">
     <%= f.text_field :projecturl, :class => 'form-control trimfield', :placeholder => 'PROJECT URL' %>
   </div>
 
   <div class="field form-group row">
-    <label for="example-number-input" class="col-10 col-form-label">USING BEST PRACTIVES FOR OPP:</label>
-  <div class="col-1">
+    <label for="example-number-input" class="col-9 col-form-label">USING BEST PRACTIVES FOR OPP:</label>
+  <div class="col-3">
     <%= f.number_field :usingbestpracticesforopp, :class => 'form-control trimfield', :placeholder => '10', :id => 'example-number-input' %>
     </div>
   </div>
 
   <div class="field form-group row">
-    <label for="example-number-input" class="col-6 col-form-label">MODULAR DEVELOPMENT:</label>
-  <div class="col-1">
+    <label for="example-number-input" class="col-9 col-form-label">MODULAR DEVELOPMENT:</label>
+  <div class="col-3">
     <%= f.text_field :modulardevelopment, :class => 'form-control trimfield', :placeholder => '20', :id => 'example-number-input' %>
     </div>
   </div>
 
-  <div class="actions col-5">
-    <button type="submit" class="btn btn-primary col-5 trimsubmit" id="SUBMIT"> <%= f.submit 'SUBMIT', :class => 'form-control' %> </button>
+  <div class="actions col-12">
+    <button type="submit" class="btn btn-primary col-12 trimsubmit" id="SUBMIT"> <%= f.submit 'SUBMIT', :class => 'form-control' %> </button>
   </div>
 <% end %>
 
