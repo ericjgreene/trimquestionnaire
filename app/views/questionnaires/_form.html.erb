@@ -2,7 +2,7 @@
 
 
 
-<form class="">
+<form class="trimform">
 
 
 <%= form_for(questionnaire) do |f| %>
@@ -19,39 +19,37 @@
   <% end %>
 
   <div class="field form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NAME">
-    <%= f.label :name, :class => 'form-control' %>
-    <%= f.text_field :name, :class => 'form-control', :placeholder => 'NAME' %>
+    <%= f.text_field :name, :class => 'form-control', :placeholder => 'FULL NAME' %>
   </div>
 
   <div class="field form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :class => 'form-control', :placeholder => 'EMAIL' %>
   </div>
 
   <div class="field form-group">
-    <%= f.label :projectrepo %>
-    <%= f.text_field :projectrepo %>
+    <%= f.text_field :projectrepo, :class => 'form-control', :placeholder => 'PROJECT REPO' %>
   </div>
 
   <div class="field form-group">
-    <%= f.label :projecturl %>
-    <%= f.text_field :projecturl %>
+    <%= f.text_field :projecturl, :class => 'form-control', :placeholder => 'PROJECT URL' %>
   </div>
 
-  <div class="field form-group">
-    <%= f.label :usingbestpracticesforopp %>
-    <%= f.number_field :usingbestpracticesforopp %>
+  <div class="field form-group row">
+    <label for="example-number-input" class="col-10 col-form-label">USING BEST PRACTIVES FOR OPP:</label>
+  <div class="col-1">
+    <%= f.number_field :usingbestpracticesforopp, :class => 'form-control', :placeholder => '10', :id => 'example-number-input' %>
+    </div>
   </div>
 
-  <div class="field form-group">
-    <%= f.label :modulardevelopment %>
-    <%= f.text_field :modulardevelopment %>
+  <div class="field form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">MODULAR DEVELOPMENT:</label>
+  <div class="col-1">
+    <%= f.text_field :modulardevelopment, :class => 'form-control', :placeholder => '20', :id => 'example-number-input' %>
+    </div>
   </div>
 
   <div class="actions">
-    <button type="submit" class="btn btn-primary"> <%= f.submit %> </button>
+    <button type="submit" class="btn btn-primary" id="SUBMIT"> <%= f.submit 'SUBMIT' %> </button>
   </div>
 <% end %>
 
