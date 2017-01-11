@@ -1,6 +1,8 @@
-<h1>Welcome to My Website, <%= @questionnaire.name %></h1>
+<h1>Questionaire results for <%= @questionnaire.name %></h1>
 
-<p>
-    You have successfully registered on example.com,
-    with the username: <%= @questionnaire.email %>.<br>
-</p>
+<p> Full Name: <%= @questionnaire.name %>. </p>
+<p> Email: <%= @questionnaire.email %>. </p>
+<p> Project Repo: <%= @questionnaire.projectrepo %>. </p>
+<p> Project URL: <%= @questionnaire.projecturl %>. </p>
+<p> Using Best Practices for OPP: <%= @questionnaire.usingbestpracticesforopp %>. </p>
+<p> Modular Development: <%= @questionnaire.modulardevelopment %>. </p>
